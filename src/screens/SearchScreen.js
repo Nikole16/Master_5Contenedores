@@ -12,7 +12,7 @@ import {
 } from "firebase/firestore";
 import { size, map } from "lodash";
 import { useNavigation } from "@react-navigation/native";
-import { Loading } from "../components/Shared";
+//import { Loading } from "../components/Shared";
 import { db, screen } from "../utils";
 
 export function SearchScreen() {
@@ -52,7 +52,7 @@ export function SearchScreen() {
         onChangeText={(text) => setSearchText(text)}
       />
 
-      {!searchResults && <Loading show text="Cargando" />}
+      {!searchResults /*&& <Loading show text="Cargando" />*/}
 
       <ScrollView>
         {size(searchResults) === 0 ? (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ScrollView, Dimensions } from "react-native";
 import { doc, onSnapshot } from "firebase/firestore";
-//import { Carousel, Loading } from "../../../components/Shared";
+import { Carousel, Loading } from "../../../components/Shared";
 import {
   Header,
   Info,
